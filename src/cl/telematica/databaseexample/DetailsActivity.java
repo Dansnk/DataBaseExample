@@ -43,8 +43,9 @@ public class DetailsActivity extends Activity {
 				EQM.latitude = c.getString(5);
 				EQM.longitude = c.getString(6);
 				EQM.dateTime = c.getString(7);
-				EQM.dateTime = c.getString(8);
+				EQM.link = c.getString(8);
 				list.add(EQM);
+				EQM = new EarthQuakeDataModel();
 				i++;
 			}while(c.moveToNext() && (i<8));
 		}		
