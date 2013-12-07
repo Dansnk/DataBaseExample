@@ -36,14 +36,14 @@ public class DetailsActivity extends Activity {
 		int i = 0;
 		if(c.moveToFirst()){
 			do{
-				EQM.title = c.getString(0);
-				EQM.magnitude = c.getString(1);
-				EQM.location = c.getString(2);
-				EQM.depth = c.getString(3);
-				EQM.latitude = c.getString(4);
-				EQM.longitude = c.getString(5);
-				EQM.dateTime = c.getString(6);
+				EQM.title = c.getString(1);
+				EQM.magnitude = c.getString(2);
+				EQM.location = c.getString(3);
+				EQM.depth = c.getString(4);
+				EQM.latitude = c.getString(5);
+				EQM.longitude = c.getString(6);
 				EQM.dateTime = c.getString(7);
+				EQM.dateTime = c.getString(8);
 				list.add(EQM);
 				i++;
 			}while(c.moveToNext() && (i<8));
