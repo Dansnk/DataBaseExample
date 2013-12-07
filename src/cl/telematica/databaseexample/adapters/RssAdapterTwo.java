@@ -27,9 +27,9 @@ public class RssAdapterTwo extends ArrayAdapter<EarthQuakeDataModel> {
 public View getView(final int position, View convertView, ViewGroup parent) {
 		
 		ViewHolder holder = null;
+		TextView magnitude= null;
 		TextView title = null;
 	    TextView location = null;
-	    TextView magnitude= null;
 		TextView depth= null;
 		TextView latitude= null;
 		TextView longitude= null;
@@ -39,7 +39,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 		final EarthQuakeDataModel model = (EarthQuakeDataModel) getItem(position);
 	
 		if(convertView == null){
-	         convertView = mInflater.inflate(R.layout.data_item, null);
+	         convertView = mInflater.inflate(R.layout.data_item2, null);
 	         holder = new ViewHolder(convertView);
 	         convertView.setTag(holder);
 	    } else {
@@ -47,8 +47,8 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 	    }
 		
 		title = holder.getTitle();
-		location = holder.getLocationText();
 		magnitude = holder.getMagnitude();
+		location = holder.getLocationText();
 		depth = holder.getDepth();
 		latitude = holder.getLatitude();
 		longitude = holder.getLongitude();
@@ -56,7 +56,14 @@ public View getView(final int position, View convertView, ViewGroup parent) {
 		link = holder.getLink();
 		
 		title.setText(model.title);
+		magnitude.setText(model.magnitude);
 		location.setText(model.location);
+		depth.setText(model.depth);
+		latitude.setText(model.latitude);
+		longitude.setText(model.longitude);
+		dateTime.setText(model.dateTime);
+		link.setText(model.link);
+		
 		
 		return convertView;
 	}

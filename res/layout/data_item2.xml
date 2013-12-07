@@ -27,16 +27,17 @@
 	        android:layout_marginLeft="10dp"
 	        android:textColor="@android:color/black"
 	        android:textSize="16sp" />
-	
-	   	<TextView
-	        android:id="@+id/dist"
+	    
+		<TextView
+	    	android:id="@+id/magnitude"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginLeft="10dp"
-	        android:textSize="14sp" />
-        
-	    <TextView
-	    	android:id="@+id/magnitude"
+	        android:textColor="@android:color/black"
+	        android:textSize="16sp" />
+			
+	   	<TextView
+	        android:id="@+id/dist"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_marginLeft="10dp"
